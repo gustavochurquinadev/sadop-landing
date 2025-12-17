@@ -29,7 +29,7 @@ if (heroTitle) {
             scrub: 1
         },
         y: 200, // Move text down slower than scroll
-        // Removed opacity: 0 to avoid conflict with reveal animation
+        opacity: 0
     });
 }
 
