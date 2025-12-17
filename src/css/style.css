@@ -1,10 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Estilos personalizados de Lenis y GSAP */
+@layer base {
+    body {
+        @apply bg-brand-dark text-brand-text;
+        -webkit-font-smoothing: antialiased;
+    }
+}
+
+/* Lenis & GSAP Utilities */
 html.lenis,
 html.lenis body {
     height: auto;
@@ -22,11 +29,13 @@ html.lenis body {
     overflow: hidden;
 }
 
-/* Utilidades Custom */
-.hero-bg {
-    background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+/* Custom Utilities */
+.glass-nav {
+    @apply bg-brand-dark/70 backdrop-blur-lg border-b border-white/10;
 }
 
-.clip-slant {
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+.text-gradient {
+    background: linear-gradient(to right, #ffffff, #a1a1aa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

@@ -1,12 +1,11 @@
-import './css/style.css' // Importamos estilos
+import './css/style.css'
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Lenis from '@studio-freight/lenis'
 
-// Registrar plugins
 gsap.registerPlugin(ScrollTrigger);
 
-// 1. Configuración Lenis (Smooth Scroll)
+// 1. Smooth Scroll Setup with Lenis
 const lenis = new Lenis({
     duration: 1.2,
     easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
@@ -19,30 +18,42 @@ function raf(time) {
 }
 requestAnimationFrame(raf);
 
-// Exponer lenis globalmente para usarlo en onclick del HTML si es necesario
-window.lenis = lenis;
+// 2. Parallax Hero Effect
+const heroTitle = document.querySelector('h1');
+if (heroTitle) {
+    gsap.to(heroTitle, {
+        scrollTrigger: {
+            trigger: "body",
+            start: "top top",
+            end: "bottom top",
+            scrub: 1
+        },
+        y: 200, // Move text down slower than scroll
+        // Removed opacity: 0 to avoid conflict with reveal animation
+    });
+}
 
-// 2. Animaciones GSAP (Mismo código que antes, pero modular)
-// Hero
-const tlHero = gsap.timeline({ defaults: { ease: "power3.out" } });
-tlHero.from(".reveal-hero", { y: 50, opacity: 0, duration: 1, stagger: 0.2, delay: 0.2 });
-gsap.from("#navbar", { y: -100, opacity: 0, duration: 1, delay: 0.8 });
+// 3. Reveal Animations (Hero)
+const tl = gsap.timeline({ defaults: { ease: "power4.out", duration: 1.5 } });
 
-// ScrollTriggers Generales
-const sections = [
-    { trigger: "#video", target: ".video-card" },
-    { trigger: "#problema", target: ".problem-card", stagger: 0.2 },
-    { trigger: "#solucion", target: ".step-card", stagger: 0.3 },
-    { trigger: "#precios", target: ".price-card", stagger: 0.15 }
-];
+tl.to(".reveal-hero", {
+    y: 0,
+    opacity: 1,
+    stagger: 0.2,
+    delay: 0.5
+});
 
-sections.forEach(sec => {
-    gsap.from(sec.target, {
-        scrollTrigger: { trigger: sec.trigger, start: "top 75%" },
-        y: 50,
+// 4. Feature Cards Reveal
+const cards = document.querySelectorAll('.feature-card');
+cards.forEach((card, i) => {
+    gsap.from(card, {
+        scrollTrigger: {
+            trigger: card,
+            start: "top 85%",
+        },
+        y: 100,
         opacity: 0,
-        duration: 0.8,
-        stagger: sec.stagger || 0,
-        ease: "power2.out"
+        duration: 1,
+        ease: "power3.out"
     });
 });
