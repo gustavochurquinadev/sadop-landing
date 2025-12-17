@@ -20,16 +20,18 @@ requestAnimationFrame(raf);
 
 // 2. Parallax Hero Effect
 const heroTitle = document.querySelector('h1');
-if (heroTitle) {
+const heroSection = document.querySelector('section'); // First section is Hero
+
+if (heroTitle && heroSection) {
     gsap.to(heroTitle, {
         scrollTrigger: {
-            trigger: "body",
+            trigger: heroSection,
             start: "top top",
             end: "bottom top",
-            scrub: 1
+            scrub: true
         },
-        y: 200, // Move text down slower than scroll
-        opacity: 0
+        y: 150, // Parallax effect
+        // Removed opacity: 0 to keep it visible
     });
 }
 
