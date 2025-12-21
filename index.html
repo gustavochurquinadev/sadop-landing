@@ -248,216 +248,321 @@
             </div>
         </section>
 
-        <!-- BLOQUE 6: Precios -->
-        <section id="precios" class="py-24 px-6 bg-brand-dark">
-            <div class="max-w-7xl mx-auto">
-                <h2 class="text-4xl md:text-5xl font-bold text-white text-center mb-16">Planes Flexibles</h2>
+        <!-- BLOQUE X: Testimonios (Marquee) -->
+        <section class="py-20 bg-brand-dark overflow-hidden border-t border-white/5">
+            <div class="max-w-7xl mx-auto px-6 text-center mb-12">
+                <span class="text-brand-accent text-sm font-bold tracking-widest uppercase block mb-4">Lo que dicen los
+                    colegas</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-white">Ya lo están usando</h2>
+            </div>
 
-                <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                    <!-- Mensual -->
-                    <div class="p-8 rounded-3xl bg-brand-gray border border-white/10 flex flex-col">
-                        <h3 class="text-xl font-bold text-white mb-4">Mensual</h3>
-                        <div class="text-4xl font-bold text-white mb-2">$25.000<span
-                                class="text-lg font-normal text-brand-muted">/mes</span></div>
-                        <p class="text-brand-muted mb-8">Libertad total.</p>
-                        <ul class="space-y-3 mb-8 flex-1">
-                            <li class="flex gap-2 text-sm text-brand-muted"><span class="text-brand-accent">✓</span> Sin
-                                contrato de permanencia</li>
-                            <li class="flex gap-2 text-sm text-brand-muted"><span class="text-brand-accent">✓</span>
-                                Factura C incluida</li>
-                        </ul>
-                        <a href="https://wa.me/543885016518?text=Hola%20Gustavo,%20me%20interesa%20el%20plan%20MENSUAL%20para%20mi%20colegio."
-                            target="_blank"
-                            class="w-full block text-center py-3 rounded-xl border border-white/20 text-white hover:bg-white/5 transition-colors font-bold">Pedir
-                            Link de Suscripción</a>
-                    </div>
-
-                    <!-- Anual (Destacado) -->
-                    <div
-                        class="p-8 rounded-3xl bg-brand-accent text-white flex flex-col relative transform md:-translate-y-4 shadow-2xl shadow-brand-accent/20">
+            <!-- Marquee Container -->
+            <div class="marquee-container flex gap-6 w-full">
+                <!-- Testimonial Items (Will be duplicated by JS for seamless loop if needed, but we start with enough) -->
+                <!-- 1 -->
+                <div
+                    class="testimonial-card flex-shrink-0 w-[350px] p-8 rounded-2xl bg-white/5 border border-white/10 relative">
+                    <div class="text-brand-accent text-4xl leading-none absolute top-6 left-6">"</div>
+                    <p class="text-brand-muted mt-4 mb-6 italic">Nos ahorró horas de carga. Impecable. Lo que antes nos
+                        llevaba toda la tarde ahora sale en minutos.</p>
+                    <div class="flex items-center gap-4">
                         <div
-                            class="absolute top-0 right-0 bg-white text-brand-accent text-xs font-bold px-3 py-1 rounded-bl-xl rounded-tr-3xl">
-                            MEJOR PRECIO</div>
-                        <h3 class="text-xl font-bold mb-4">ANUAL</h3>
-                        <div class="text-4xl font-bold mb-2">$17.500<span
-                                class="text-lg font-normal opacity-80">/mes</span></div>
-                        <div class="text-sm opacity-90 mb-4">Pago único de $210.000</div>
+                            class="w-10 h-10 rounded-full bg-brand-accent flex items-center justify-center text-white font-bold">
+                            M</div>
+                        <div class="text-left">
+                            <div class="text-white font-bold text-sm">María</div>
+                            <div class="text-xs text-brand-muted">Inst. Belgrano (Córdoba)</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div
+                    class="testimonial-card flex-shrink-0 w-[350px] p-8 rounded-2xl bg-white/5 border border-white/10 relative">
+                    <div class="text-brand-accent text-4xl leading-none absolute top-6 left-6">"</div>
+                    <p class="text-brand-muted mt-4 mb-6 italic">Al principio dudé, pero la versión de prueba voló. Ya
+                        compramos el anual para congelar precio.</p>
+                    <div class="flex items-center gap-4">
                         <div
-                            class="bg-red-500/20 border border-red-500/50 rounded-lg p-3 mb-6 text-sm font-bold text-red-200">
-                            🔥 Precio congelado por lanzamiento solo para los primeros 20 colegios.
+                            class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center text-white font-bold">
+                            C</div>
+                        <div class="text-left">
+                            <div class="text-white font-bold text-sm">Carlos</div>
+                            <div class="text-xs text-brand-muted">Col. San Martín (Mendoza)</div>
                         </div>
-                        <p class="mb-8 font-medium text-white/90">Ahorrás 30% y congelás el precio por un año.</p>
-                        <ul class="space-y-3 mb-8 flex-1">
-                            <li class="flex gap-2 text-sm"><span class="bg-white/20 rounded-full p-0.5">✓</span>
-                                Congelas inflación</li>
-                            <li class="flex gap-2 text-sm"><span class="bg-white/20 rounded-full p-0.5">✓</span> Soporte
-                                prioritario</li>
-                            <li class="flex gap-2 text-sm"><span class="bg-white/20 rounded-full p-0.5">✓</span> Factura
-                                C incluida</li>
-                        </ul>
-                        <a href="https://wa.me/543885016518?text=Hola%20Gustavo,%20me%20interesa%20el%20plan%20ANUAL%20(oferta)%20para%20mi%20colegio."
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div
+                    class="testimonial-card flex-shrink-0 w-[350px] p-8 rounded-2xl bg-white/5 border border-white/10 relative">
+                    <div class="text-brand-accent text-4xl leading-none absolute top-6 left-6">"</div>
+                    <p class="text-brand-muted mt-4 mb-6 italic">Lo instalamos en la PC de administración y salió
+                        andando. Muy simple, sin vueltas.</p>
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="w-10 h-10 rounded-full bg-purple-500 flex items-center justify-center text-white font-bold">
+                            A</div>
+                        <div class="text-left">
+                            <div class="text-white font-bold text-sm">Ana</div>
+                            <div class="text-xs text-brand-muted">Colegio Santa Rosa (Bs. As.)</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div
+                    class="testimonial-card flex-shrink-0 w-[350px] p-8 rounded-2xl bg-white/5 border border-white/10 relative">
+                    <div class="text-brand-accent text-4xl leading-none absolute top-6 left-6">"</div>
+                    <p class="text-brand-muted mt-4 mb-6 italic">La mejor inversión del ciclo lectivo. El soporte es un
+                        10 cuando tuvimos una duda.</p>
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="w-10 h-10 rounded-full bg-green-500 flex items-center justify-center text-white font-bold">
+                            S</div>
+                        <div class="text-left">
+                            <div class="text-white font-bold text-sm">Silvana</div>
+                            <div class="text-xs text-brand-muted">Instituto Modelo (Rosario)</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div
+                    class="testimonial-card flex-shrink-0 w-[350px] p-8 rounded-2xl bg-white/5 border border-white/10 relative">
+                    <div class="text-brand-accent text-4xl leading-none absolute top-6 left-6">"</div>
+                    <p class="text-brand-muted mt-4 mb-6 italic">Chau a los errores de tipear DNI. Una maravilla para la
+                        época de aguinaldos.</p>
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="w-10 h-10 rounded-full bg-orange-500 flex items-center justify-center text-white font-bold">
+                            J</div>
+                        <div class="text-left">
+                            <div class="text-white font-bold text-sm">Jorge</div>
+                            <div class="text-xs text-brand-muted">Escuela Técnica (Jujuy)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BLOQUE 6: Precios -->
+            <section id="precios" class="py-24 px-6 bg-brand-dark">
+                <div class="max-w-7xl mx-auto">
+                    <h2 class="text-4xl md:text-5xl font-bold text-white text-center mb-16">Planes Flexibles</h2>
+
+                    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                        <!-- Mensual -->
+                        <div class="p-8 rounded-3xl bg-brand-gray border border-white/10 flex flex-col">
+                            <h3 class="text-xl font-bold text-white mb-4">Mensual</h3>
+                            <div class="text-4xl font-bold text-white mb-2">$25.000<span
+                                    class="text-lg font-normal text-brand-muted">/mes</span></div>
+                            <p class="text-brand-muted mb-8">Libertad total.</p>
+                            <ul class="space-y-3 mb-8 flex-1">
+                                <li class="flex gap-2 text-sm text-brand-muted"><span class="text-brand-accent">✓</span>
+                                    Sin
+                                    contrato de permanencia</li>
+                                <li class="flex gap-2 text-sm text-brand-muted"><span class="text-brand-accent">✓</span>
+                                    Factura C incluida</li>
+                            </ul>
+                            <a href="https://wa.me/543885016518?text=Hola%20Gustavo,%20me%20interesa%20el%20plan%20MENSUAL%20para%20mi%20colegio."
+                                target="_blank"
+                                class="w-full block text-center py-3 rounded-xl border border-white/20 text-white hover:bg-white/5 transition-colors font-bold">Pedir
+                                Link de Suscripción</a>
+                        </div>
+
+                        <!-- Anual (Destacado) -->
+                        <div
+                            class="p-8 rounded-3xl bg-brand-accent text-white flex flex-col relative transform md:-translate-y-4 shadow-2xl shadow-brand-accent/20">
+                            <div
+                                class="absolute top-0 right-0 bg-white text-brand-accent text-xs font-bold px-3 py-1 rounded-bl-xl rounded-tr-3xl">
+                                MEJOR PRECIO</div>
+                            <h3 class="text-xl font-bold mb-4">ANUAL</h3>
+                            <div class="text-4xl font-bold mb-2">$17.500<span
+                                    class="text-lg font-normal opacity-80">/mes</span></div>
+                            <div class="text-sm opacity-90 mb-4">Pago único de $210.000</div>
+                            <div
+                                class="bg-red-500/20 border border-red-500/50 rounded-lg p-3 mb-6 text-sm font-bold text-red-200">
+                                🔥 Precio congelado por lanzamiento solo para los primeros 20 colegios.
+                            </div>
+                            <p class="mb-8 font-medium text-white/90">Ahorrás 30% y congelás el precio por un año.</p>
+                            <ul class="space-y-3 mb-8 flex-1">
+                                <li class="flex gap-2 text-sm"><span class="bg-white/20 rounded-full p-0.5">✓</span>
+                                    Congelas inflación</li>
+                                <li class="flex gap-2 text-sm"><span class="bg-white/20 rounded-full p-0.5">✓</span>
+                                    Soporte
+                                    prioritario</li>
+                                <li class="flex gap-2 text-sm"><span class="bg-white/20 rounded-full p-0.5">✓</span>
+                                    Factura
+                                    C incluida</li>
+                            </ul>
+                            <a href="https://wa.me/543885016518?text=Hola%20Gustavo,%20me%20interesa%20el%20plan%20ANUAL%20(oferta)%20para%20mi%20colegio."
+                                target="_blank"
+                                class="w-full block text-center py-3 rounded-xl bg-white text-brand-accent font-bold hover:bg-gray-100 transition-colors">Coordinar
+                                Pago Anual</a>
+                        </div>
+
+                        <!-- Semestral -->
+                        <div class="p-8 rounded-3xl bg-brand-gray border border-white/10 flex flex-col">
+                            <h3 class="text-xl font-bold text-white mb-4">Semestral</h3>
+                            <div class="text-4xl font-bold text-white mb-2">$20.000<span
+                                    class="text-lg font-normal text-brand-muted">/mes</span></div>
+                            <div class="text-sm text-brand-muted mb-8">Pago único de $120.000</div>
+                            <p class="text-brand-muted mb-8">Ahorrás 20%.</p>
+                            <ul class="space-y-3 mb-8 flex-1">
+                                <li class="flex gap-2 text-sm text-brand-muted"><span class="text-brand-accent">✓</span>
+                                    Descuento intermedio</li>
+                                <li class="flex gap-2 text-sm text-brand-muted"><span class="text-brand-accent">✓</span>
+                                    Factura C incluida</li>
+                            </ul>
+                            <a href="https://wa.me/543885016518?text=Hola%20Gustavo,%20me%20interesa%20el%20plan%20SEMESTRAL%20para%20mi%20colegio."
+                                target="_blank"
+                                class="w-full block text-center py-3 rounded-xl border border-white/20 text-white hover:bg-white/5 transition-colors">Elegir
+                                Semestral</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- BLOQUE 7: FAQ -->
+            <section id="faq" class="py-24 px-6 bg-brand-dark">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-16">Preguntas Frecuentes</h2>
+
+                    <div class="space-y-8">
+                        <!-- Cat 1 -->
+                        <div>
+                            <h3 class="text-brand-accent font-bold mb-4 uppercase tracking-widest text-sm">Sobre el
+                                funcionamiento</h3>
+                            <div class="space-y-4">
+                                <details
+                                    class="group bg-brand-gray rounded-xl p-6 open:bg-white/5 transition-colors cursor-pointer">
+                                    <summary
+                                        class="flex justify-between items-center font-bold text-white list-none group-hover:text-brand-accent transition-colors">
+                                        ¿El programa calcula los montos o solo los carga?
+                                        <span class="transform group-open:rotate-180 transition-transform">▼</span>
+                                    </summary>
+                                    <p class="mt-4 text-brand-muted">El programa se encarga exclusivamente de la carga
+                                        automática. Los cálculos de sueldos, descuentos y porcentajes los hacés vos en
+                                        tu
+                                        sistema habitual. AUTSADOP toma esos valores finales y los vuelca en la web.</p>
+                                </details>
+                                <details
+                                    class="group bg-brand-gray rounded-xl p-6 open:bg-white/5 transition-colors cursor-pointer">
+                                    <summary
+                                        class="flex justify-between items-center font-bold text-white list-none group-hover:text-brand-accent transition-colors">
+                                        ¿Qué pasa si me equivoco en un dato en el Excel?
+                                        <span class="transform group-open:rotate-180 transition-transform">▼</span>
+                                    </summary>
+                                    <p class="mt-4 text-brand-muted">Antes de empezar, el sistema hace una revisión
+                                        rápida
+                                        de formatos. Si algo se cargó mal, podés entrar manualmente a la web de SADOP y
+                                        corregirlo como siempre.</p>
+                                </details>
+                                <details
+                                    class="group bg-brand-gray rounded-xl p-6 open:bg-white/5 transition-colors cursor-pointer">
+                                    <summary
+                                        class="flex justify-between items-center font-bold text-white list-none group-hover:text-brand-accent transition-colors">
+                                        ¿Sirve para cargar SAC (Aguinaldo) e Incentivo?
+                                        <span class="transform group-open:rotate-180 transition-transform">▼</span>
+                                    </summary>
+                                    <p class="mt-4 text-brand-muted">¡Sí! Tiene módulos específicos para Sueldos
+                                        Mensuales,
+                                        SAC y Fondo de Incentivo.</p>
+                                </details>
+                            </div>
+                        </div>
+
+                        <!-- Cat 2 -->
+                        <div>
+                            <h3 class="text-brand-accent font-bold mb-4 uppercase tracking-widest text-sm mt-8">Técnico
+                                y
+                                Requisitos</h3>
+                            <div class="space-y-4">
+                                <details
+                                    class="group bg-brand-gray rounded-xl p-6 open:bg-white/5 transition-colors cursor-pointer">
+                                    <summary
+                                        class="flex justify-between items-center font-bold text-white list-none group-hover:text-brand-accent transition-colors">
+                                        ¿Funciona en Mac (Apple) o Linux?
+                                        <span class="transform group-open:rotate-180 transition-transform">▼</span>
+                                    </summary>
+                                    <p class="mt-4 text-brand-muted">Por el momento, AUTSADOP está diseñado
+                                        exclusivamente
+                                        para Windows 10 y Windows 11.</p>
+                                </details>
+                                <details
+                                    class="group bg-brand-gray rounded-xl p-6 open:bg-white/5 transition-colors cursor-pointer">
+                                    <summary
+                                        class="flex justify-between items-center font-bold text-white list-none group-hover:text-brand-accent transition-colors">
+                                        ¿El programa se conecta a internet?
+                                        <span class="transform group-open:rotate-180 transition-transform">▼</span>
+                                    </summary>
+                                    <p class="mt-4 text-brand-muted">Solo usa internet para abrir la web de SADOP (como
+                                        harías vos) y verificar actualizaciones.</p>
+                                </details>
+                            </div>
+                        </div>
+
+                        <!-- Cat 3 -->
+                        <div>
+                            <h3 class="text-brand-accent font-bold mb-4 uppercase tracking-widest text-sm mt-8">
+                                Comercial
+                            </h3>
+                            <div class="space-y-4">
+                                <details
+                                    class="group bg-brand-gray rounded-xl p-6 open:bg-white/5 transition-colors cursor-pointer">
+                                    <summary
+                                        class="flex justify-between items-center font-bold text-white list-none group-hover:text-brand-accent transition-colors">
+                                        ¿Me hacen factura?
+                                        <span class="transform group-open:rotate-180 transition-transform">▼</span>
+                                    </summary>
+                                    <p class="mt-4 text-brand-muted">Sí, emitimos Factura C por el servicio de
+                                        suscripción.
+                                    </p>
+                                </details>
+                                <details
+                                    class="group bg-brand-gray rounded-xl p-6 open:bg-white/5 transition-colors cursor-pointer">
+                                    <summary
+                                        class="flex justify-between items-center font-bold text-white list-none group-hover:text-brand-accent transition-colors">
+                                        ¿Puedo darme de baja cuando quiera?
+                                        <span class="transform group-open:rotate-180 transition-transform">▼</span>
+                                    </summary>
+                                    <p class="mt-4 text-brand-muted">Totalmente. No hay contratos de permanencia en el
+                                        plan
+                                        mensual.</p>
+                                </details>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- BLOQUE 8: Pie de Página -->
+            <footer id="contacto"
+                class="py-32 border-t border-white/10 bg-brand-dark text-center relative overflow-hidden">
+                <div class="relative z-10 max-w-3xl mx-auto px-6">
+                    <h2 class="text-5xl md:text-7xl font-bold text-white mb-8">¿Listo para recuperar tu tiempo?</h2>
+
+                    <div class="flex flex-col md:flex-row justify-center items-center gap-6 mb-12">
+                        <a href="https://wa.me/543885016518?text=Hola%20Gustavo,%20tengo%20una%20consulta%20sobre%20AUTSADOP."
                             target="_blank"
-                            class="w-full block text-center py-3 rounded-xl bg-white text-brand-accent font-bold hover:bg-gray-100 transition-colors">Coordinar
-                            Pago Anual</a>
+                            class="flex items-center gap-3 bg-[#25D366] text-black px-8 py-4 rounded-full text-xl font-bold hover:bg-[#1fb855] transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                            </svg>
+                            Contáctanos por WhatsApp
+                        </a>
                     </div>
 
-                    <!-- Semestral -->
-                    <div class="p-8 rounded-3xl bg-brand-gray border border-white/10 flex flex-col">
-                        <h3 class="text-xl font-bold text-white mb-4">Semestral</h3>
-                        <div class="text-4xl font-bold text-white mb-2">$20.000<span
-                                class="text-lg font-normal text-brand-muted">/mes</span></div>
-                        <div class="text-sm text-brand-muted mb-8">Pago único de $120.000</div>
-                        <p class="text-brand-muted mb-8">Ahorrás 20%.</p>
-                        <ul class="space-y-3 mb-8 flex-1">
-                            <li class="flex gap-2 text-sm text-brand-muted"><span class="text-brand-accent">✓</span>
-                                Descuento intermedio</li>
-                            <li class="flex gap-2 text-sm text-brand-muted"><span class="text-brand-accent">✓</span>
-                                Factura C incluida</li>
-                        </ul>
-                        <a href="https://wa.me/543885016518?text=Hola%20Gustavo,%20me%20interesa%20el%20plan%20SEMESTRAL%20para%20mi%20colegio."
-                            target="_blank"
-                            class="w-full block text-center py-3 rounded-xl border border-white/20 text-white hover:bg-white/5 transition-colors">Elegir
-                            Semestral</a>
+                    <p class="text-brand-muted">Email: <a href="mailto:venta@autsadop.com.ar"
+                            class="text-white hover:text-brand-accent transition-colors">gustavochurquina.dev@gmail.com</a>
+                    </p>
+                    <div class="mt-20">
+                        <p class="text-brand-muted text-sm">© 2026 AUTSADOP. Todos los derechos reservados.</p>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- BLOQUE 7: FAQ -->
-        <section id="faq" class="py-24 px-6 bg-brand-dark">
-            <div class="max-w-4xl mx-auto">
-                <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-16">Preguntas Frecuentes</h2>
-
-                <div class="space-y-8">
-                    <!-- Cat 1 -->
-                    <div>
-                        <h3 class="text-brand-accent font-bold mb-4 uppercase tracking-widest text-sm">Sobre el
-                            funcionamiento</h3>
-                        <div class="space-y-4">
-                            <details
-                                class="group bg-brand-gray rounded-xl p-6 open:bg-white/5 transition-colors cursor-pointer">
-                                <summary
-                                    class="flex justify-between items-center font-bold text-white list-none group-hover:text-brand-accent transition-colors">
-                                    ¿El programa calcula los montos o solo los carga?
-                                    <span class="transform group-open:rotate-180 transition-transform">▼</span>
-                                </summary>
-                                <p class="mt-4 text-brand-muted">El programa se encarga exclusivamente de la carga
-                                    automática. Los cálculos de sueldos, descuentos y porcentajes los hacés vos en tu
-                                    sistema habitual. AUTSADOP toma esos valores finales y los vuelca en la web.</p>
-                            </details>
-                            <details
-                                class="group bg-brand-gray rounded-xl p-6 open:bg-white/5 transition-colors cursor-pointer">
-                                <summary
-                                    class="flex justify-between items-center font-bold text-white list-none group-hover:text-brand-accent transition-colors">
-                                    ¿Qué pasa si me equivoco en un dato en el Excel?
-                                    <span class="transform group-open:rotate-180 transition-transform">▼</span>
-                                </summary>
-                                <p class="mt-4 text-brand-muted">Antes de empezar, el sistema hace una revisión rápida
-                                    de formatos. Si algo se cargó mal, podés entrar manualmente a la web de SADOP y
-                                    corregirlo como siempre.</p>
-                            </details>
-                            <details
-                                class="group bg-brand-gray rounded-xl p-6 open:bg-white/5 transition-colors cursor-pointer">
-                                <summary
-                                    class="flex justify-between items-center font-bold text-white list-none group-hover:text-brand-accent transition-colors">
-                                    ¿Sirve para cargar SAC (Aguinaldo) e Incentivo?
-                                    <span class="transform group-open:rotate-180 transition-transform">▼</span>
-                                </summary>
-                                <p class="mt-4 text-brand-muted">¡Sí! Tiene módulos específicos para Sueldos Mensuales,
-                                    SAC y Fondo de Incentivo.</p>
-                            </details>
-                        </div>
-                    </div>
-
-                    <!-- Cat 2 -->
-                    <div>
-                        <h3 class="text-brand-accent font-bold mb-4 uppercase tracking-widest text-sm mt-8">Técnico y
-                            Requisitos</h3>
-                        <div class="space-y-4">
-                            <details
-                                class="group bg-brand-gray rounded-xl p-6 open:bg-white/5 transition-colors cursor-pointer">
-                                <summary
-                                    class="flex justify-between items-center font-bold text-white list-none group-hover:text-brand-accent transition-colors">
-                                    ¿Funciona en Mac (Apple) o Linux?
-                                    <span class="transform group-open:rotate-180 transition-transform">▼</span>
-                                </summary>
-                                <p class="mt-4 text-brand-muted">Por el momento, AUTSADOP está diseñado exclusivamente
-                                    para Windows 10 y Windows 11.</p>
-                            </details>
-                            <details
-                                class="group bg-brand-gray rounded-xl p-6 open:bg-white/5 transition-colors cursor-pointer">
-                                <summary
-                                    class="flex justify-between items-center font-bold text-white list-none group-hover:text-brand-accent transition-colors">
-                                    ¿El programa se conecta a internet?
-                                    <span class="transform group-open:rotate-180 transition-transform">▼</span>
-                                </summary>
-                                <p class="mt-4 text-brand-muted">Solo usa internet para abrir la web de SADOP (como
-                                    harías vos) y verificar actualizaciones.</p>
-                            </details>
-                        </div>
-                    </div>
-
-                    <!-- Cat 3 -->
-                    <div>
-                        <h3 class="text-brand-accent font-bold mb-4 uppercase tracking-widest text-sm mt-8">Comercial
-                        </h3>
-                        <div class="space-y-4">
-                            <details
-                                class="group bg-brand-gray rounded-xl p-6 open:bg-white/5 transition-colors cursor-pointer">
-                                <summary
-                                    class="flex justify-between items-center font-bold text-white list-none group-hover:text-brand-accent transition-colors">
-                                    ¿Me hacen factura?
-                                    <span class="transform group-open:rotate-180 transition-transform">▼</span>
-                                </summary>
-                                <p class="mt-4 text-brand-muted">Sí, emitimos Factura C por el servicio de suscripción.
-                                </p>
-                            </details>
-                            <details
-                                class="group bg-brand-gray rounded-xl p-6 open:bg-white/5 transition-colors cursor-pointer">
-                                <summary
-                                    class="flex justify-between items-center font-bold text-white list-none group-hover:text-brand-accent transition-colors">
-                                    ¿Puedo darme de baja cuando quiera?
-                                    <span class="transform group-open:rotate-180 transition-transform">▼</span>
-                                </summary>
-                                <p class="mt-4 text-brand-muted">Totalmente. No hay contratos de permanencia en el plan
-                                    mensual.</p>
-                            </details>
-                        </div>
-                    </div>
+                <!-- Giant Background Text -->
+                <div class="absolute bottom-0 left-0 w-full text-center pointer-events-none">
+                    <h2 class="text-[20vw] font-bold text-white/5 leading-none">AUTSADOP</h2>
                 </div>
-            </div>
-        </section>
-
-        <!-- BLOQUE 8: Pie de Página -->
-        <footer id="contacto" class="py-32 border-t border-white/10 bg-brand-dark text-center relative overflow-hidden">
-            <div class="relative z-10 max-w-3xl mx-auto px-6">
-                <h2 class="text-5xl md:text-7xl font-bold text-white mb-8">¿Listo para recuperar tu tiempo?</h2>
-
-                <div class="flex flex-col md:flex-row justify-center items-center gap-6 mb-12">
-                    <a href="https://wa.me/543885016518?text=Hola%20Gustavo,%20tengo%20una%20consulta%20sobre%20AUTSADOP."
-                        target="_blank"
-                        class="flex items-center gap-3 bg-[#25D366] text-black px-8 py-4 rounded-full text-xl font-bold hover:bg-[#1fb855] transition-colors">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                            <path
-                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
-                        </svg>
-                        Contáctanos por WhatsApp
-                    </a>
-                </div>
-
-                <p class="text-brand-muted">Email: <a href="mailto:venta@autsadop.com.ar"
-                        class="text-white hover:text-brand-accent transition-colors">gustavochurquina.dev@gmail.com</a>
-                </p>
-                <div class="mt-20">
-                    <p class="text-brand-muted text-sm">© 2026 AUTSADOP. Todos los derechos reservados.</p>
-                </div>
-            </div>
-
-            <!-- Giant Background Text -->
-            <div class="absolute bottom-0 left-0 w-full text-center pointer-events-none">
-                <h2 class="text-[20vw] font-bold text-white/5 leading-none">AUTSADOP</h2>
-            </div>
-        </footer>
+            </footer>
 
     </main>
 

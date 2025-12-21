@@ -59,3 +59,18 @@ cards.forEach((card, i) => {
         ease: "power3.out"
     });
 });
+
+// 5. Testimonials Marquee
+const marqueeContainer = document.querySelector('.marquee-container');
+if (marqueeContainer) {
+    // Clone items for seamless loop
+    const items = marqueeContainer.innerHTML;
+    marqueeContainer.innerHTML += items + items; // Triple content for safety
+
+    gsap.to(marqueeContainer, {
+        xPercent: -50,
+        repeat: -1,
+        duration: 30,
+        ease: "none"
+    });
+}
